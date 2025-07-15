@@ -14,14 +14,14 @@ const quoteElement = document.getElementById('quote');
 
 function generateQuote(){
 
+    // clear the set if the set is the size of the length of the array
+    // this means all quotes have been used & it is time to clear the set to start again
     if(usedIndexs.size >= quotes.length){
         usedIndexs.clear();
     }
 
     while(true){
 
-        // clear the set if the set is the size of the length of the array
-        // this means all quotes have been used & it is time to clear the set to start again
 
 
         // generate a random index between 0 and the number - 1 of the quotes array
