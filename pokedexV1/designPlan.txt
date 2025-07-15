@@ -27,12 +27,12 @@ Pokemon = {
 }
 
 Step 1: Console version working first:
-    - 1.1: Create JSON of first 151 pokemon with all data listed above √
-    - 1.2: Create pokemon object in JavaScript √
-    - 1.3: Function to pull the object from the JSON
+    - 1.1: Create JSON of first 151 pokemon with all data listed above ✅
+    - 1.2: Create pokemon object in JavaScript ✅
+    - 1.3: Function to pull the object from the JSON ✅
 
 Step 2: Front end & connecting
-    - 2.1: UI stuff
+    - 2.1: UI stuff ✅
         - <h1>Pokedex</>
         - <input id="id" type = "number">
         - <button onclick="getPokemon()"id="button">Get Pokemon</button>
@@ -42,21 +42,15 @@ Step 2: Front end & connecting
         
     //here?
 
-    - 2.2: Get elements
+    - 2.2: Get elements ✅
         - input: doc.getElbyID('id')
         - button: doc.getElbyID('button')
         - speciesElement: doc.getElbyID('species')
         - speciesDescription: doc.getElbyID('descriptoin') 
 
-    - 2.3: 
-        - eventListeners on button('click'):
-            if click getinnerHTML: from input.value
-                get pokemon instance by pokemon ID
-                h1.innerHTML = pokemon.species
-                h2.innerHTML = pokemon.description
-        
+    - 2.3:
+        Set appropriate information to the elements: ✅
 
-        User selects 
-        How do we put the correct pokemon in the user selection?
-
-Where does the user select?
+Step 3: Polishing the frontend:
+    - 3.1: Add all appropriate information to the HTML ✅
+    - 3.2: Add pokemon images

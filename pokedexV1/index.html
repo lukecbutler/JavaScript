@@ -11,12 +11,11 @@
         body{
             background-color: #666;
             font-family: 'Courier New', Courier, monospace;
-        }
-        
-        h1, p, h3{
             color: white;
-
+            display: flex;
+            flex-direction: column;
         }
+
 
         #button{
             background-color: palevioletred;
@@ -24,20 +23,83 @@
             height: 2rem;
             width: auto;
         }
+
+        input{
+            border-radius: 5px;
+            height: 30px;
+            margin-bottom: 2rem;
+        }
+
+        #image{
+            width: 30%;
+        }
+        a{  
+            width: auto;
+            height: auto;
+            max-width: 40%;
+            color: white;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Pokedex</h1>
-    <input id="id" type = "number">
-    <button id="button" onclick="getPokemon()">Get Pokemon</button>
+    <a href="http://127.0.0.1:5500/pokedexV1/index.html"><h1>Pokedex</h1></a>
+    <div>
+        <input id="input" type = "number" required>
+        <button id="button" onclick="search()">Get Pokemon</button>
+    </div>  
 
+    <!-- ID -->
+    <h1 id="id-heading">ID:</h1>
+    <p id="id-text"></p>
+
+    <!-- Species -->
     <h1 id="species-heading">Species:</h1>
     <p id="species-text"></p>
 
+    <!-- Image -->
+    <img id="image" alt="">
+
     <hr>
 
-    <h3 id="description-heading">Description:</h3>
-    <p id="description-text"></p>
+    <!-- Pokedex Entry -->
+    <h3 id="pokedex-entry-heading">Pokedex Entry:</h3>
+    <p id="pokedex-entry-text"></p>
+
+    <div id="descriptions">
+        <!-- Height -->
+        <h5 id="height-heading">Height:</h5>
+        <h4 id="height-text"></h4>
+
+        <!-- Weight -->
+        <h5 id="weight-heading">Weight:</h5>
+        <h4 id="weight-text"></h4>
+
+        <!-- Gender -->
+        <h5 id="gender-heading">Gender:</h5>
+        <h4 id="gender-text"></h4>
+
+        <!-- Category -->
+        <h5 id="category-heading">Category:</h5>
+        <h4 id="category-text"></h4>
+
+        <!-- Abilities -->
+        <h5 id="abilities-heading">Abilities:</h5>
+        <h4 id="abilities-text"></h4>
+    </div>
+
+    <!-- Type -->
+    <h4 id="type-heading">Type:</h4>
+    <ul id="type-list">
+    </ul>
+
+    <!-- Weaknesses -->
+    <h4 id="weaknesses-heading">Weaknesses:</h4>
+    <ul id="weaknesses-list">
+    </ul>
+
+
+
 
     <script src="app.js"></script>
 </body>
